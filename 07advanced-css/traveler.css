@@ -1,0 +1,244 @@
+/* prevent problems with different browswers*/
+*{box-sizing: border-box;}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* header stuff here */
+header {
+    background-color: #f2889b;
+    padding: 2rem 1vw;
+    display: flex;
+}
+header div {
+    padding-left: 2vw;
+}
+header h1 {
+    margin: 0;
+    color: #ffffff;
+}
+header p {
+    margin: 0;
+    color: #ffffff;
+    letter-spacing: 0.35px;
+}
+
+/* nav stuff goes here */
+
+/*small screen*/
+@media only screen and (max-width: 800px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #aaa;
+        color: #b1e3c2;
+    }
+    nav .active a {
+        background-color: #b1e3c2;
+        background-image: linear-gradient(to bottom, #b1e3c2, #98c1a6);
+        color: white;
+    }
+} /*end of the media query*/
+
+/*wide screens*/
+@media only screen and (min-width: 801px) {
+   nav {
+    background-color: #b1e3c2;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    display: block;
+    padding: 0.83rem 2rem;
+}
+nav li.active a {
+    background-color: #ffbc21;
+    color: #fff;
+}
+nav a:hover {
+    color: #f2889b;
+}
+} /*end of the media query*/
+
+
+
+
+
+
+
+
+/* stuff for the main */
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    color: #f2889b;
+}
+main h2 {
+    color: #ffbc21;
+    margin-bottom: .2rem;
+}
+main p {
+    color: black;
+    margin: 0 0 1rem 1rem;
+}
+main ol {
+    padding: .5rem 3%;
+    background-color: #ffe0dc;
+}
+
+main dl dt {
+    color: #f2889b;
+    font-weight: 700;
+}
+main dl dd {
+    color: black;
+    font-size: .9rem;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main ul li {
+    margin-bottom: .5rem;
+    line-height: 125%;
+    font-size: .9rem;
+}
+
+main address {
+    font-style: normal;
+    background-color: #ffe0dc;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 5px solid #f2889b;
+    border-radius: .5rem;
+}
+
+main a {
+    color: #f2889b;
+}
+main a:hover {
+    color: rgb(24, 0, 239);
+}
+.hero {
+    width: 100%;
+    margin: 0;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2;
+    float: right;
+}
+figure.wrapped img{
+    width: 100%;
+    height: auto;
+}
+figure.wrapped figcaption{
+    text-align: center;
+    font-size: .75rem;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+    
+}
+div.gallery figure:hover {
+   box-shadow: 0px 0px 10px rgba(0,0,0,0.2); 
+} 
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #f2889b;
+}
+
+.myForm fieldset {
+    border: 1px solid #f2889b;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.myForm legend {
+    color: #f2889b;
+    font-size: .8rem;
+}
+.myForm label {
+    margin: .5rem;
+}
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm textarea {
+    display: block;
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm select, .myForm textarea {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.myForm textarea {
+    height: 6rem;
+}
+
+.myForm :required {
+    background-color: #ffe0dc;
+}
+
+.myForm [type=submit] {
+    background-color: #ffbc21;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+/* footer stuff here */
+footer {
+    background-color: #b1e3c2;
+    text-align: center;
+    color: #fff;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+footer a {
+    color: blue;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
