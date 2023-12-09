@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Baked: Home</title>
+        <link rel="stylesheet" href="traveler.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="description" content="Make 5-Star Baked Goods from Your Own Home">
+        <meta name="author" content="Anna Oppermann">
+        
+    </head>
+    <body>
+        <!-- Start of the page header -->
+        <header>
+            <img src="images/logo.png" alt="site logo" width="100" height="100">
+            <div>
+            <h1>Baked: Order a Recipe Book</h1>
+            <p>Delicious Breads and Sweets Made Easy!</p>
+            </div>
+        </header>
+        <!-- Start of page navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">About Baked</a></li>
+                <li><a href="weekspecial.html">Recipe of the Week</a></li>
+                <li><a href="atoz.html">Recipes A-Z</a></li>
+                <li class="active"><a href="order.html">Order a Recipe Book</a></li>
+                <li><a href="measure.html">Measurement Guide</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- Start of page content -->
+        <main>
+        <h1>Order a Recipe Book</h1>
+        <form method="get" class="myForm" action="thanks.html">
+           
+        <fieldset>
+        <legend>Customer Information</legend>
+        <label>First Name*<input type="text" name="fname" required></label>    
+        <label>Last Name*<input type="text" name="lname" required></label> <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
+        <label>Email Address*<input type="email" name="emailadd" required></label>
+        </fieldset>    
+        
+        <fieldset>
+        <legend>Shipping</legend>
+        <label><input type="radio" name="ship" value="free">Free Shipping (10-12 Business Days)</label> 
+        <label><input type="radio" name="ship" value="stand">Standard Shipping (4-6 Business Days)</label>
+        <label><input type="radio" name="ship" value="rush">Rushed Shipping (2-3 Business Days)</label>
+           
+        </fieldset>
+        
+        <fieldset>
+        <legend>Recipe Book Choice</legend>    
+            <label><input type="checkbox" name="vol1" value="chosen">Baked: Volume I</label>
+            <label><input type="checkbox" name="vol2" value="chosen">Baked: Volume II</label>
+            <label><input type="checkbox" name="vol3" value="chosen">Baked: Volume III</label>
+            <label><input type="checkbox" name="vol4" value="chosen">Baked: Volume IV</label>
+            
+            <label>Book Type
+            <select name="type">
+            <option value="none">Please Select</option>
+            <option value="hard">Hardcover</option>
+            <option value="paper">Paperback</option>
+            <option value="online">Online PDF</option>
+            <option value="signed">Signed Hardcover</option>
+            </select>
+            </label>
+        </fieldset>
+           
+        <label>Addtional Comments
+            <textarea name="comments"></textarea>
+        </label>
+            
+            
+            
+            
+            
+            
+            
+        <input type="submit" value="Complete Order">
+        </form>
+      
+        </main>
+        <!-- Start of page footer -->
+        <footer>
+        <p>&copy; 2023 &bull; Anna Oppermann &bull; <a href="mailto:anna.m.oppermann@gmail.com">Email Us</a></p>
+        </footer>
+    </body>
+</html>
